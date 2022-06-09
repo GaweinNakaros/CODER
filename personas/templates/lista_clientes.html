@@ -1,0 +1,35 @@
+{% extends "padre.html" %}
+<!-- heredo statick -->
+{% load static %}
+
+{% block titulo %}
+
+  <h1 style="color: white ;"> Listado de Clientes </h1>
+
+{% endblock %}
+
+<!-- heredo contenido -->
+{% block contenido %}
+        
+          <table class="table">
+            <!-- Encabezado Tabla -->  
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+              </tr>
+            </thead>
+            <!-- Contenido Tabla --> 
+            <tbody>
+              {% for x in datos %}
+              <tr>
+                  <th scope="row">{{x.id}}</th>
+                  <td>{{x.nombre}}</td>
+                  <td>{{x.edad}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>  
+        
+{% endblock %}

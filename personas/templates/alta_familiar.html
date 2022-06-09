@@ -1,0 +1,27 @@
+
+
+<!-- heredo padre -->
+{% extends "padre.html" %}
+<!-- heredo statick -->
+{% load static %}
+<!-- Modifico el titulo pára cada seccion -->
+{% block titulo %}
+  <h1 style="color: white ;"> Formulario de alta para Familiares </h1>
+{% endblock %}
+<!-- heredo contenido -->
+{% block contenido %}
+  
+    <form action="alta_familiar" method="POST">  <!--get los datos van en el navegador /post los datos van dentro del cuerpo -->
+      {% csrf_token %}
+
+      <p>Nombre:</p>
+      <input type="text" name="nombre" required>
+      
+      <p>Edad</p>
+      <input type="number" name="edad" required>
+      
+      <input type="submit" value="Enviar">
+
+    </form>
+  
+{% endblock %}

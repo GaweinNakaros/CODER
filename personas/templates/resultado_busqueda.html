@@ -1,0 +1,25 @@
+{% extends "padre.html" %}
+<!-- heredo statick -->
+{% load static %}
+
+{% block titulo %}
+
+  <h1 style="color: white ;"> Formulario de Busqueda </h1>
+
+{% endblock %}
+
+<!-- heredo contenido -->
+{% block contenido %}
+
+    {% if familiar %}
+    <ul>
+    {% for f in familiar %}
+            <li style=>Nombre:{{f.nombre}}</li>
+            <li style=>Edad:{{f.edad}}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <h1 style="text-align: center ;"> No se Encontraton Similitudes </h1>
+    {% endif %}
+
+ {% endblock %}
