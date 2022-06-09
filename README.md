@@ -10,13 +10,13 @@
 
 ## Las solapas AltaAmigos/Familiar/Clientes son iguale, en ellas podes ingresar a los formularios asociados a cada base de datos y dar de alta nombre y edad
 
-## Por ultimo, el formulario de busqueda solo esta asociado a la base de datos de " Lista Familiares", este ceunta con dos opciones.
+## Por ultimo, el formulario de busqueda solo esta asociado a la base de datos de " Lista Familiares", este cuenta con dos opciones.
 
-## 1ra_ muestra la vista del buscador y te permite llenar un campo de datos, 
-## 2da_ si los datos ingresados se encuentran en la base de datos te va a mostrar la vista de los datos encontrado ó si por otro lado si no encuentra ninguna coincidencia
+## 1ra_ muestra la vista del buscador y te permite llenar un campo de datos, solo permite buscar por nombre. 
+## 2da_ si los datos ingresados se encuentran en la base de datos te va a mostrar la vista de los datos encontrados ó por otro lado, si no encuentra ninguna coincidencia
 ## te informa que no se encontraron similitudes
 
-## para salir del formulario de busque podes acceder a cualquiera de las vistas desde el menu de navegacion 
+## para salir del formulario de busqueda podes acceder a cualquiera de las vistas desde el menu de navegacion 
 
 
 ## Dejo una vista del panel de inicio
